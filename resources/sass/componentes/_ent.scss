@@ -1,0 +1,13 @@
+@use "../base";
+.ent{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: base.$gap-size;
+    padding-top: 50px;
+    // div{//esto es para centrearlo trabajo para casa
+
+    // }
+    @media screen and (max-width: map-get(base.$breakpoint, "s")) {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,16 @@
+@use "../base";
+.grid-galeria{
+    margin-top: 8rem;
+    display: grid;
+    grid-auto-rows: base.$image-size;
+    gap: base.$gap-size;
+    grid-auto-flow: dense;
+    &_item{
+        @include base.dis-galeria;
+    }
+}
+@media screen and (max-width: map-get(base.$breakpoint, "s")) {
+    .grid-galeria_item{
+    @include base.dis-galeria-movil;
+    }
+}

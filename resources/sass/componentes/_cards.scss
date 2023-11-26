@@ -1,0 +1,12 @@
+@use "../base";
+.prods{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: base.$gap-size;
+    margin: 1.3rem 0;
+    .card{
+        background-color: base.$dark;
+        text-align: center;
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,12 @@
+// Variables generales
+$primary:#ddd;
+$dark:#202020;
+$light:white;
+$borde-linea:solid #666 1px;
+
+//Galeria
+$image-size:200px;
+$gap-size:1rem;
+$breakpoint:("s":470px,"m":768px,"l":1024px);
+
+//el archivo base es la carpeta no el archivo y de la carpeta base es lo que busca el index que es el _index.scss

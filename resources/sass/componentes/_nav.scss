@@ -1,0 +1,36 @@
+@use"../base";
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 10px;
+    background-color: base.$dark;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.2);
+    div{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        // height: 100%;
+        justify-content: space-between;
+        a{
+            @include base.reset-links;
+        }
+    }
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    @include base.reset-list;
+    li a{
+        display: block;
+        background-color: base.$dark;
+        padding: 1rem;
+        &:hover{
+            background-color: base.$light;
+            color: base.$dark;
+            transition: 0.5s;
+        }
+    }
+}
