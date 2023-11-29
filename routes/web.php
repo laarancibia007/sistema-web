@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\CatalogoController;
+use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\SalidaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
