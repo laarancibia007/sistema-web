@@ -22,10 +22,10 @@
                     <!-- ul>li>a -->
                     <!-- esto permite crear una lista completa como atajo -->
                     <ul>
-                        <li><a href="{{url('principal/index/')}}">Inicio</a></li>
-                        <li><a href="{{url('principal/nosotros/')}}">Nosotros</a></li>
-                        <!-- <li><a href="{{url('principal/productos/')}}">Productos</a></li> -->
-                        <li><a href="{{url('principal/contactos/')}}">Contactos</a></li>
+                        <li><a href="{{url('pagina_principal/index/')}}">Inicio</a></li>
+                        <li><a href="{{url('pagina_principal/nosotros/')}}">Nosotros</a></li>
+                        <!-- <li><a href="{{url('pagina_principal/productos/')}}">Productos</a></li> -->
+                        <li><a href="{{url('pagina_principal/contactos/')}}">Contactos</a></li>
                         {{-- <li><a href="inicio.html">Inicio de Sesion</a></li> --}}
 
 
@@ -153,6 +153,32 @@
                 <h3>Informacion 4</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi?</p>
             </div>
+            <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #FC5353;">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation"></button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
         </section>
 
         {{-- <footer>Clinica Dental Burgoa &copy; 2023</footer> --}}

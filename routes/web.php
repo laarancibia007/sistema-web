@@ -38,19 +38,19 @@ Route::middleware(['auth'])->group(function (){
 
 });
 
-Route::get('/principal/index', [PrincipalController::class,'index']);
-Route::get('/principal/nosotros', [PrincipalController::class,'nosotros']);
-Route::get('/principal/catalogo', [PrincipalController::class,'catalogo']);
-Route::get('/principal/index_usuarios', [PrincipalController::class,'index_usuarios']);
+Route::get('/pagina_principal/index', [PrincipalController::class,'index']);
+Route::get('/pagina_principal/nosotros', [PrincipalController::class,'nosotros']);
+Route::get('/pagina_principal/catalogo', [PrincipalController::class,'catalogo']);
+Route::get('/pagina_principal/index_usuarios', [PrincipalController::class,'index_usuarios']);
 
-Route::get('/principal/contacto', [ContactoController::class, 'crear']);
-Route::post('/principal/contact', [ContactoController::class, 'postcrear'])->name('contacto.store');
+Route::get('/pagina_principal/contacto', [ContactoController::class, 'crear']);
+Route::post('/pagina_principal/contact', [ContactoController::class, 'postcrear'])->name('contacto.store');
 
 Route::get('/catalogo', [CatalogoController::class,'index']);
 
 Route::get('/salidas', [SalidaController::class,'index']);
 Route::post('/salidas', [SalidaController::class,'guardar']);
-// Route::get('/principal/contactos', [PrincipalController::class,'contactos']);
+// Route::get('/pagina_principal/contactos', [PrincipalController::class,'contactos']);
 
 
 

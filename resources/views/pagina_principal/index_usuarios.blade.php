@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="{{url('principal/index')}}">Concesionario Vehicular</a>
+            <a class="navbar-brand" href="{{url('pagina_principal/index')}}">Concesionario Vehicular</a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,10 +27,10 @@
                                 class="visually-hidden">(current)</span></a>
                     </li> --}}
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('principal/nosotros')}}">Nosotros</a>
+                        <a class="nav-link" href="{{url('pagina_principal/nosotros')}}">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('principal/catalogo')}}">Productos</a>
+                        <a class="nav-link" href="{{url('pagina_principal/catalogo')}}">Productos</a>
                     </li>
 
                 </ul>
@@ -89,10 +89,10 @@
                     <!-- ul>li>a -->
                     <!-- esto permite crear una lista completa como atajo -->
                     <ul>
-                        <li><a href="{{url('principal/index/')}}">Inicio</a></li>
-                        <li><a href="{{url('principal/nosotros/')}}">Nosotros</a></li>
-                        <li><a href="{{url('principal/productos/')}}">Productos</a></li>
-                        <li><a href="{{url('principal/contactos/')}}">Contactos</a></li>
+                        <li><a href="{{url('pagina_principal/index/')}}">Inicio</a></li>
+                        <li><a href="{{url('pagina_principal/nosotros/')}}">Nosotros</a></li>
+                        <li><a href="{{url('pagina_principal/productos/')}}">Productos</a></li>
+                        <li><a href="{{url('pagina_principal/contactos/')}}">Contactos</a></li>
                         {{-- <li><a href="inicio.html">Inicio de Sesion</a></li> --}}
 
 
