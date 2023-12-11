@@ -6,16 +6,29 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #ffffff;
+    background-color: #F8E5FF;
     line-height: 1.5;//esto es para el espaciado
     margin: 20px 0;//esto para que no este tan pegado en la parte superior
 }
-.container, .index{
+
+// Anterior estilo
+
+// .container, .index{
+//     display: grid;
+//     gap: 20px;
+//     max-width: 1600px;
+//     margin: 0 auto;
+// }
+
+// nuevo estilo
+
+.container{
     display: grid;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
+
 img{
     width: 100%;
     height: 100%;

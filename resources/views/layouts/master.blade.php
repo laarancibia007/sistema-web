@@ -35,6 +35,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{url('pagina_principal/catalogo')}}">Productos</a>
                     </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Insertar Datos</a>

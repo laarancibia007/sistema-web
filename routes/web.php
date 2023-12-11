@@ -43,14 +43,15 @@ Route::get('/pagina_principal/nosotros', [PrincipalController::class,'nosotros']
 Route::get('/pagina_principal/catalogo', [PrincipalController::class,'catalogo']);
 Route::get('/pagina_principal/index_usuarios', [PrincipalController::class,'index_usuarios']);
 
+Route::get('/pagina_principal/contactos', [PrincipalController::class,'contactos']);
 Route::get('/pagina_principal/contacto', [ContactoController::class, 'crear']);
-Route::post('/pagina_principal/contact', [ContactoController::class, 'postcrear'])->name('contacto.store');
+Route::post('/pagina_principal/contacto', [ContactoController::class, 'postcrear'])->name('contacto.store');
 
 Route::get('/catalogo', [CatalogoController::class,'index']);
 
 Route::get('/salidas', [SalidaController::class,'index']);
 Route::post('/salidas', [SalidaController::class,'guardar']);
-// Route::get('/pagina_principal/contactos', [PrincipalController::class,'contactos']);
+
 
 
 

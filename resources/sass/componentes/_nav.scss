@@ -3,10 +3,12 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 100%;
     padding: 10px;
     background-color: base.$dark;
-    border-radius: 20px;
+    border-radius: 25px;
+    
+    
     box-shadow: 0 2px 5px rgba(255,255,255,0.2);
     div{
         display: flex;
@@ -26,11 +28,11 @@ header ul{
     li a{
         display: block;
         background-color: base.$dark;
-        padding: 1rem;
+        padding: 2rem;
         &:hover{
-            background-color: base.$light;
+            background-color: base.$dark;
             color: base.$dark;
-            transition: 0.5s;
+            transition: 0.2s;
         }
     }
 }

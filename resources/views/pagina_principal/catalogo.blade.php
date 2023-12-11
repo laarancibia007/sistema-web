@@ -7,12 +7,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Clinica Dental Burgoa</title>
+    {{-- <link rel="stylesheet" href="/css/main.css"> --}}
+    <title>Concesionario Vehicular</title>
 </head>
 <body>
     <div class="container">
-    <section class="index">
+        <!-- Header -->
+        <section class="index">
+            <!-- Header -->
+        <section class="index">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="{{url('pagina_principal/index')}}">Clinica Dental Burgoa</a>
@@ -34,7 +37,7 @@
                         <a class="nav-link" href="{{url('pagina_principal/contactos')}}">Contactos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('pagina_principal/catalogo')}}">Productos</a>
+                        <a class="nav-link" href="{{url('')}}">Productos</a>
                     </li>
                     
                     <li class="nav-item dropdown">
@@ -101,66 +104,79 @@
             </div>
         </div>
     </nav>
-    <h1>Formulacion de citas medicas</h1>
-        <!-- Header -->
-        <form action="" method="post" enctype="multipart/form-data">
-            @csrf
-            <div class="mb-3">
-                <label for="" class="form-label">Nombre Completo</label>
-                <input type="text"
-                class="form-control" name="nombre" id="" aria-describedby="helpId" placeholder="" required value="{{old('nombre')}}">
-                <small id="helpId" class="form-text text-muted">Help text</small>
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label">Correo Electronico</label>
-                <input type="text"
-                class="form-control" name="nombre" id="" aria-describedby="helpId" placeholder="" required value="{{old('nombre')}}">
-                <small id="helpId" class="form-text text-muted">Help text</small>
-            </div>
-            <div class="mb-3">
-                <label for="precio" class="form-label">Celular</label>
-                <input type="number"
-                class="form-control" name="precio" id="precio" placeholder="" aria-describedby="fileHelpId">
-                <div id="fileHelpId" class="form-text">Help text</div>
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label">Escribe tu mensaje</label>
-                <input type="text"
-                class="form-control" name="nombre" id="" aria-describedby="helpId" placeholder="" required value="{{old('nombre')}}">
-                <small id="helpId" class="form-text text-muted">Help text</small>
-            </div>
+    
+            <section class="ent">
+                <picture>
+                    <img src="/img/imagen7.jpg" alt="">
+                </picture>
+                <div>
+                    <h2>Todo nuestro catalogo de vehiculos.</h2>
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quasi, deserunt repellendus animi error ex est odio dolor, officiis facilis inventore architecto alias nesciunt voluptates ut qui, natus tempore eveniet!</h4>
+                </div>
+            </section>
+            <!-- Cards -->
+            <section class="prods">
 
-            {{-- <div class="mb-3">
-                <label for="" class="form-label">Elegir Archivo</label>
-                <input type="file" class="form-control" name="img" id="" placeholder="" aria-describedby="fileHelpId">
-                <div id="fileHelpId" class="form-text">Help text</div>
-            </div> --}}
-            {{-- <div class="mb-3">
-                <label for="precio" class="form-label">Precio</label>
-                <input type="number"
-                class="form-control" name="precio" id="precio" placeholder="" aria-describedby="fileHelpId">
-                <div id="fileHelpId" class="form-text">Help text</div>
-            </div> --}}
-            {{-- <div class="mb-3">
-                <label for="stock" class="form-label">Stock</label>
-                <input type="number"
-                class="form-control" name="stock" id="stock" placeholder="" aria-describedby="fileHelpId">
-                <div id="fileHelpId" class="form-text">Help text</div>
-            </div> --}}
-            {{-- <div class="mb-3">
-                <label for="categoria_id" class="form-label">Categoria del producto</label>
-                <select class="form-select form-select-lg" name="categoria_id" id="categoria_id">
-                    <option selected>Seleccione una categoria</option> --}}
-                    {{-- mejorar acerca de los productos los id --}}
-                    {{-- @foreach ($listacat as $cat)
-                        <option value="{{$cat->id}}">{{$cat->nombre}}</option>
-                    @endforeach
-                </select>
-            </div> --}}
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+                <div class="card">
+                    <!-- fontawesome icon -->
+                    <div>
+                        <img class="img2" src="/img/imagen1.jpg" alt="">
+                    </div>
+                    <h3>Vehiculo 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi?</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="img2" src="/img/imagen2.jpg" alt="">
+                    </div>
+                    <!-- fontawesome icon -->
+                    <h3>Vehiculo 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi?</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="img2" src="/img/imagen3.jpeg" alt="">
+                    </div>
+                    <!-- fontawesome icon -->
+                    <h3>Vehiculo 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi?</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="img2" src="/img/imagen4.jpg" alt="">
+                    </div>
+                    <!-- fontawesome icon -->
+                    <h3>Vehiculo 5</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi?</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="img2" src="/img/imagen5.jpg" alt="">
+                    </div>
+                    <!-- fontawesome icon -->
+                    <h3>Vehiculo 6</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi?</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="img2" src="/img/imagen6.jpg" alt="">
+                    </div>
+                    <!-- fontawesome icon -->
+                    <h3>Vehiculo 7</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi?</p>
+                </div>
+                <div class="card">
+                    <div>
+                        <img class="img2" src="/img/imagen7.jpg" alt="">
+                    </div>
+                    <!-- fontawesome icon -->
+                    <h3>Vehiculo 8</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi?</p>
+                </div>
+            </section>
+        </section>
 
-        <footer>Clinica Dental Burgoa &copy; 2023</footer>
+        {{-- <footer>Angel Arancibia &copy; 2022</footer> --}}
     </div>
 </body>
 </html>
